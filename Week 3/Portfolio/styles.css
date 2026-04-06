@@ -1,0 +1,176 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --barbiePink: #ff1493;
+    --hotPink: #ff4fa8;
+    --lightPink: #ffd9ec;
+    --babyPink: #fff3fa;
+    --softPink: #ffc2df;
+    --white: #ffffff;
+    --textDark: #7a1c4a;
+    --shadowPink: rgba(255, 20, 147, 0.25);
+    --borderPink: #ff9ccc;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(135deg, #fff3fa, #ffd9ec, #ffc2df);
+    color: var(--textDark);
+    padding: 30px;
+    line-height: 1.6;
+}
+
+header {
+    font-family: "Pacifico", cursive;
+    font-size: 3rem;
+    text-align: center;
+    color: var(--barbiePink);
+    margin-bottom: 25px;
+    text-shadow: 2px 2px 0 var(--white);
+}
+
+.hero {
+    margin-bottom: 40px;
+}
+
+.title {
+    max-width: 900px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.7);
+    border: 3px solid var(--lightPink);
+    border-radius: 24px;
+    padding: 30px;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 500;
+    box-shadow: 0 8px 20px var(--shadowPink);
+}
+
+section {
+    margin-bottom: 45px;
+}
+
+h2 {
+    font-family: "Pacifico", cursive;
+    color: var(--barbiePink);
+    text-align: center;
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 0 var(--white);
+}
+
+h3 {
+    color: var(--barbiePink);
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.88);
+    border: 3px solid var(--borderPink);
+    border-radius: 24px;
+    box-shadow: 0 8px 20px var(--shadowPink);
+    padding: 20px;
+    width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-6px) scale(1.02);
+    box-shadow: 0 12px 28px rgba(255, 20, 147, 0.35);
+}
+
+.card p {
+    text-align: center;
+    font-size: 1rem;
+}
+
+.game-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 18px;
+    border: 3px solid var(--lightPink);
+    margin-bottom: 15px;
+}
+
+.education ul {
+    max-width: 850px;
+    margin: 0 auto;
+    list-style: none;
+    background: rgba(255, 255, 255, 0.88);
+    border: 3px solid var(--borderPink);
+    border-radius: 24px;
+    box-shadow: 0 8px 20px var(--shadowPink);
+    padding: 25px;
+}
+
+.education li {
+    font-size: 1.1rem;
+    padding: 12px 0;
+    border-bottom: 1px solid #f7bfdc;
+}
+
+.education li:last-child {
+    border-bottom: none;
+}
+
+.year {
+    color: var(--hotPink);
+    font-weight: 700;
+    margin-right: 10px;
+}
+
+footer {
+    background: rgba(255, 255, 255, 0.88);
+    border: 3px solid var(--borderPink);
+    border-radius: 24px;
+    box-shadow: 0 8px 20px var(--shadowPink);
+    padding: 25px;
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.contact-email {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--textDark);
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 18px;
+    }
+
+    header {
+        font-size: 2.2rem;
+    }
+
+    .title {
+        font-size: 1.1rem;
+        padding: 22px;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 360px;
+    }
+}
